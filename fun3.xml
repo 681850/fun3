@@ -8,7 +8,7 @@
     </value>
     <next>
       <block type="oled_color" id="80">
-        <field name="OBJECT">BLACK</field>
+        <field name="OBJECT">GREEN</field>
         <next>
           <block type="led_select" id="96" inline="true">
             <field name="ACTION">FLASH</field>

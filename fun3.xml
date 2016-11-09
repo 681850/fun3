@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="led_select" id="63" inline="true" x="64" y="24">
-    <field name="ACTION">ON</field>
+    <field name="ACTION">FLASH</field>
     <value name="LED">
       <block type="math_number" id="87">
         <field name="NUM">5000</field>
@@ -9,6 +9,16 @@
     <next>
       <block type="oled_color" id="80">
         <field name="OBJECT">BLACK</field>
+        <next>
+          <block type="led_select" id="96" inline="true">
+            <field name="ACTION">FLASH</field>
+            <value name="LED">
+              <block type="math_number" id="103">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
+          </block>
+        </next>
       </block>
     </next>
   </block>
